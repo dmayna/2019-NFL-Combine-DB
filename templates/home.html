@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> NFL Draft</title>
+  </head>
+  <body>
+    <h1> NFL Draft Tool Database </h1>
+    <p> List of Alternatives </p>
+    <ol>
+      <li> Insert query </li>
+      <li> Delete query</li>
+      <li> Find fastest players by position </li>
+      <li> Find strongest players by position </li>
+      <li> View all players by position </li>
+    </ol>
+    <form action="{{ url_for('result') }}"  method="post">
+      <select name="comp_select">
+        <option value="1">1. Insert query</option>
+        <option value="2">2. Delete query</option>
+        <option value="3">3. Find fastest players by position</option>
+        <option value="4">4. Find strongest players by position</option>
+        <option value="5">5. View all players by position</option>
+      </select>
+      <button type="submit" class="btn btn-default">Go</button>
+    </form>
+
+  </body>
+</html>

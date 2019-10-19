@@ -1,0 +1,15 @@
+<h2>View All players by position</h2>
+
+<form action="{{ url_for('result') }}"  method="post">
+  <select name="comp_select">
+    <option value="1">1. Quarterbacks </option>
+    <option value="2">2. Runningbacks</option>
+    <option value="3">3. Wide Receivers</option>
+    <option value="4">4. Tight Ends</option>
+    <option value="5">5. Offensive Lineman</option>
+    <option value="6">6. Defensive Lineman </option>
+    <option value="7">7. Defensive Backs</option>
+    <option value="8">8. Linebackers</option>
+  </select>
+  <button type="submit" class="btn btn-default">Go</button>
+</form>
